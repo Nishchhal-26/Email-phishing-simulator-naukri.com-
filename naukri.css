@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f4f6f9;
+}
+
+.naukri-header {
+  background: #2b65c3;
+  color: white;
+  padding: 15px 40px;
+  font-size: 22px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.naukri-header .logo span {
+  color: #ff6600; /* Orange dot like naukri.com */
+}
+
+.naukri-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+}
+
+.naukri-login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.naukri-login-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.naukri-login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.naukri-login-box input:focus {
+  outline: none;
+  border-color: #2b65c3;
+  box-shadow: 0 0 5px rgba(43, 101, 195, 0.3);
+}
+
+.naukri-login-box button {
+  width: 100%;
+  padding: 14px;
+  background: #2b65c3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.naukri-login-box button:hover {
+  background: #244fa1;
+}
+
+.naukri-login-box .forgot,
+.naukri-login-box .register {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.naukri-login-box .forgot a,
+.naukri-login-box .register a {
+  color: #2b65c3;
+  text-decoration: none;
+}
+
+.naukri-login-box .forgot a:hover,
+.naukri-login-box .register a:hover {
+  text-decoration: underline;
+}
