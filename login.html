@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Naukri - Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='naukri.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="naukri-header">
+    <div class="logo">Naukri<span>.com</span></div>
+  </header>
+
+  <div class="naukri-login-container">
+    <div class="naukri-login-box">
+      <h2>Login</h2>
+      <form action="/login" method="POST">
+        <input type="email" name="email" placeholder="Email ID / Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="forgot"><a href="#">Forgot Password?</a></p>
+      <p class="register">New to Naukri? <a href="/register">Register Now</a></p>
+    </div>
+  </div>
+</body>
+</html>

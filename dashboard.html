@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>📊 Phishing Simulation Dashboard</h2>
+        {% if attempts %}
+            <ul>
+            {% for attempt in attempts %}
+                <li>{{ attempt }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No attempts recorded yet.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
